@@ -1,54 +1,18 @@
-/* App.css */
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* HomePage.css */
 
-/* General styles */
 .products {
   margin-top: 20px;
 }
 
-.product-item {
-  width: calc(33.33% - 20px); /* Three items in a row with some spacing */
+.product-row {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.product-item {
+  width: calc(33.% - 20px); /* Three items in a row with some spacing */
+  margin-bottom: -20px;
   padding: 10px; /* Add padding to the product items */
   box-sizing: border-box; /* Include padding in the width calculation */
   text-align: center; /* Center the content horizontally */
@@ -58,7 +22,7 @@
 .product-item img {
   max-width: 100%; /* Make images fill the container */
   height: auto;
-  border-radius: 10px; /* Add rounded corners */
+  border-radius: 20px; /* Add rounded corners */
 }
 
 /* Center the product list */
@@ -66,10 +30,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the items horizontally */
-  margin: 0 -5px; /* Add negative margin to compensate for padding */
+  margin: 0 -10px; /* Add negative margin to compensate for padding */
 }
 
-/* Responsive styles */
 @media only screen and (max-width: 768px) {
   .product-item {
     width: calc(50% - 10px); /* Two items in a row on smaller screens */
