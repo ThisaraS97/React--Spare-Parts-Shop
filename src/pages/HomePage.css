@@ -1,0 +1,54 @@
+/* HomePage.css */
+
+.products {
+  margin-top: 20px;
+  width: 80%; /* Set width to 80% of the page */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.product-item img {
+  max-width: 100%; /* Make images fill the container */
+  height: auto;
+  border-radius: 20px; /* Add rounded corners */
+}
+
+.product-item {
+  width: calc(33.% - 20px); /* Three items in a row with some spacing */
+  margin-bottom: -20px;
+  padding: 10px; /* Add padding to the product items */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  text-align: center; /* Center the content horizontally */
+  margin-right: 5px; /* Reduce right margin to bring products closer */
+}
+
+.product-item img {
+  max-width: 100%; /* Make images fill the container */
+  height: auto;
+  border-radius: 20px; /* Add rounded corners */
+}
+
+/* Center the product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+  margin: 0 -10px; /* Add negative margin to compensate for padding */
+}
+
+@media only screen and (max-width: 768px) {
+  .product-item {
+    width: calc(50% - 10px); /* Two items in a row on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .product-item {
+    width: calc(100% - 20px); /* Single item in a row on even smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+}

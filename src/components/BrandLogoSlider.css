@@ -1,0 +1,53 @@
+/* BrandLogoSlider.css */
+
+.brand-logo-slider-container {
+  overflow: hidden; /* Hide overflow to prevent partial visibility of images */
+  position: relative;
+  width: 80%; /* Set width to 80% of the page */
+  margin: 0 auto; /* Center horizontally */
+  margin-bottom: 20px; /* Add space below the search bar */
+
+}
+
+.brand-logo-slider {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  transition: margin-left 0.5s ease;
+  position: relative;
+  flex-wrap: nowrap; /* Prevent wrapping of images */
+}
+
+.brand-logo-slider img {
+  max-width: 120px; /* Set maximum width to desired size */
+  height: auto;
+  margin: 0 30px; /* Add spacing between logos */
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-control {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1; /* Ensure arrows are above logos */
+  position: absolute;
+}
+
+.slider-control.forward {
+  right: -30px; /* Adjust position of forward arrow */
+}
+
+.slider-control.backward {
+  left: -30px; /* Adjust position of backward arrow */
+}
+
+@media (max-width: 768px) {
+  .brand-logo-slider-container {
+    width: 100%; /* Set width to 100% on smaller screens */
+  }
+}

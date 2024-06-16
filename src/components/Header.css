@@ -1,0 +1,99 @@
+/* Header.css */
+
+/* General styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.logo img {
+  width: 100px; /* Decrease the width of the logo image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px; /* Increased font size */
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.call-now,
+.login {
+  margin-left: 20px;
+  padding: 12px 24px; /* Increased padding */
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px; /* Increased font size */
+}
+
+.cart-icon {
+  position: relative;
+  margin-left: 20px;
+}
+
+.cart-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-items {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start on smaller screens */
+    padding: 10px; /* Decrease padding */
+  }
+
+  .navbar ul {
+    margin-top: 10px; /* Add spacing between navbar and actions on smaller screens */
+  }
+
+  .actions {
+    margin-top: 10px; /* Add spacing between navbar and actions on smaller screens */
+  }
+  
+  .call-now,
+  .login {
+    font-size: 14px; /* Decrease font size */
+    padding: 8px 16px; /* Decrease padding */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .cart-icon {
+    margin-left: 0; /* Remove left margin */
+  }
+}

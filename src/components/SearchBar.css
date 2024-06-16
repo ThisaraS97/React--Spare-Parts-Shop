@@ -1,0 +1,34 @@
+/* SearchBar.css */
+
+.search-bar {
+  width: 80%; /* Adjust width to 80% of the container */
+  margin-left: 10%; /* Align 10% from the left */
+  display: flex;
+  margin-bottom: 20px; /* Add space below the search bar */
+  margin-top: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px; /* Apply border-radius to left edges */
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 20px 20px 0; /* Apply border-radius to right edges */
+  cursor: pointer;
+}
+
+.search-bar button svg {
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
